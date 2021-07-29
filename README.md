@@ -1,6 +1,6 @@
 # User authentication using Supabase 
 
-User can create new account or login with existing account
+User authentication with space themed UI.User can create new account /log in with existing account 
 
 
 
