@@ -10,7 +10,7 @@ form_field_validator: ^1.1.0 <br>
 progressive_image: ^2.0.0 <br>
 lottie: ^1.1.0 <br>
 
-#Images used 
+#Images used <br>
 <a href='https://pngtree.com/so/globe-navigational-equipment'>globe navigational equipment png from pngtree.com</a><br>
 <a href='https://pngtree.com/so/astronaut-clipart'>astronaut clipart png from pngtree.com</a><br>
 
