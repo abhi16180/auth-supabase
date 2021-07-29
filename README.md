@@ -1,6 +1,6 @@
 ## User authentication using Supabase 
 
-User authentication with space themed UI.User can create new account /log in with existing account 
+User authentication with space themed UI.User can create new account /log in with existing account<br>
 
 #Packages used
 get: ^4.2.5
@@ -11,7 +11,7 @@ progressive_image: ^2.0.0
 lottie: ^1.1.0
 
 #Images used 
-<a href='https://pngtree.com/so/globe-navigational-equipment'>globe navigational equipment png from pngtree.com</a>
-<a href='https://pngtree.com/so/astronaut-clipart'>astronaut clipart png from pngtree.com</a>
+<a href='https://pngtree.com/so/globe-navigational-equipment'></a><br>
+<a href='https://pngtree.com/so/astronaut-clipart'></a>
 
 
