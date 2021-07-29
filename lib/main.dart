@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:supabase/supabase.dart';
-import './register.dart';
+
 import 'Screens/home.dart';
+import 'Screens/register.dart';
 
 final supabaseUrl = 'https://dppejzdqiuogmpucjqrs.supabase.co';
 final supabaseKey =
@@ -37,15 +38,23 @@ class _SplashState extends State<Splash> {
     super.initState();
     Timer(Duration(seconds: 2), () {
       if (box.read('loggedIN') == null) {
-        Navigator.pushReplacement(context,
-            MaterialPageRoute(builder: (context) {
-          return RegisterPage();
-        }));
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) {
+              return RegisterPage();
+            },
+          ),
+        );
       } else {
-        Navigator.pushReplacement(context,
-            MaterialPageRoute(builder: (context) {
-          return Home();
-        }));
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) {
+              return Home();
+            },
+          ),
+        );
       }
     });
   }

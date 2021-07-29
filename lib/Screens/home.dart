@@ -1,5 +1,5 @@
 import 'package:auth/AuthenticationManger/authmanager.dart/authmanager.dart';
-import 'package:auth/register.dart';
+import 'package:auth/Screens/register.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
