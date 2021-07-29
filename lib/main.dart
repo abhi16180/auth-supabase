@@ -27,8 +27,6 @@ void main() async {
 }
 
 class Splash extends StatefulWidget {
-  Splash({Key? key}) : super(key: key);
-
   @override
   _SplashState createState() => _SplashState();
 }
