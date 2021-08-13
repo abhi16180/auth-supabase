@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:http/http.dart' as http;
 import 'package:auth/AuthenticationManger/authmanager.dart/authmanager.dart';
 import 'package:auth/Screens/home.dart';
 import 'package:auth/Screens/login.dart';
@@ -34,6 +35,26 @@ class _RegisterPageState extends State<RegisterPage> {
       if (response.data != null) {
         var box = Get.find<GetStorage>();
         box.write('loggedIN', true);
+/* final resp = await http.post(
+            Uri.parse('https://warm-everglades-89418.herokuapp.com/register'),
+            body: {
+              'name': name,
+              'email': email,
+              'password': password,
+              'uid': response.data!.user!.id,
+            });
+
+        
+        if (resp.statusCode == 200) {
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+              builder: (context) {
+                return Home();
+              },
+            ),
+          );
+        } */
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(

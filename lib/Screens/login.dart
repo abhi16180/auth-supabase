@@ -1,5 +1,5 @@
 import 'dart:async';
-
+import 'package:http/http.dart' as http;
 import 'package:auth/AuthenticationManger/authmanager.dart/authmanager.dart';
 import 'package:flutter/material.dart';
 import 'package:form_field_validator/form_field_validator.dart';
@@ -28,8 +28,24 @@ class _LogInState extends State<LogIn> {
     Future<void> loginUser(String email, String password) async {
       final resp = await _authManger.logInWithExistingAccount(email, password);
       var box = Get.find<GetStorage>();
-      box.write('loggedIn', true);
+
       if (resp.data != null) {
+        box.write('loggedIn', true);
+        /*final response = await http.get(
+            Uri.parse(
+                'https://warm-everglades-89418.herokuapp.com/login?uid=d38d0874-850e-4330-902a-baa85d712cdb&password=123456'),
+            headers: {
+              'password': password,
+              'uid': resp.data!.user!.id,
+            });
+        if (response.statusCode == 200) {
+          Navigator.pushReplacement(context,
+              MaterialPageRoute(builder: (context) {
+            return Home();
+          }));
+        } else {
+          print(response.body);
+        } */
         Navigator.pushReplacement(context,
             MaterialPageRoute(builder: (context) {
           return Home();
@@ -44,6 +60,9 @@ class _LogInState extends State<LogIn> {
             backgroundColor: Colors.amberAccent,
           ),
         );
+        setState(() {
+          signedup = !signedup;
+        });
       }
     }
 

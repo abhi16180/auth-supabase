@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   get: ^4.2.5
+  http: ^0.13.3
   supabase: ^0.0.4
   get_storage: ^2.0.3
   form_field_validator: ^1.1.0
