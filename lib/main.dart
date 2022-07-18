@@ -7,9 +7,8 @@ import 'package:supabase/supabase.dart';
 import 'Screens/home.dart';
 import 'Screens/register.dart';
 
-final supabaseUrl = 'https://dppejzdqiuogmpucjqrs.supabase.co';
-final supabaseKey =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyNzIzMTc4OSwiZXhwIjoxOTQyODA3Nzg5fQ.-HTXFHBsFzxhFwyNREbTBhoHkvbAvdjOE3_6NPDt7Ho';
+final supabaseUrl = '<supabase url>';
+final supabaseKey = '<supabase key>';
 GetStorage box = new GetStorage();
 
 void main() async {
