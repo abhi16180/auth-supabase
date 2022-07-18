@@ -1,6 +1,5 @@
 import 'dart:async';
-import 'package:http/http.dart' as http;
-import 'package:auth/AuthenticationManger/authmanager.dart/authmanager.dart';
+import 'package:auth/AuthenticationManager/authmanager.dart/authmanager.dart';
 import 'package:flutter/material.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 import 'package:get/get.dart';

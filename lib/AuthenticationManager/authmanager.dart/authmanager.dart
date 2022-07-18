@@ -1,12 +1,10 @@
 import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
 import 'package:supabase/supabase.dart';
 
 import '../../main.dart';
 
 class AuthManger {
   final client = Get.find<SupabaseClient>();
-
   //create new user with email and password
   Future<GotrueSessionResponse> createUserWithEmailAndPassword(
       String name, String email, String password) async {
